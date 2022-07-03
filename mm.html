@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="mm.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 
+    
+    <title></title>
+</head>
+<body >
+   
+     <h1 style="background-color: rgb(240, 216, 220);">
+        <span class="gradient-text">
+        Pagina de desenare </span>
+    </h1>
+    <div class="continut">
+        <canvas id="canvas"></canvas>
+    </div>
+    <img id="pensula" src="pensula.png">
+    <div class="butoane">
+        <!-- <input type="button" class="bt" id="elipsa" name="elipsa" value="elipsa"> -->
+        <div  onclick="Schimba(this)" class="culoare" style="background:coral;"></div>
+        <div  onclick="Schimba(this)" class="culoare" style="background:cornflowerblue;"></div>
+        <div  onclick="Schimba(this)" class="culoare" style="background:rgb(177, 42, 132);"></div>
+        <input onInput="dr=this.value" type="color" class="alege">
+        
+   
+        <input onInput="cl=this.value" type="color" id="backgr"  onchange="Back_color() " name="fundal">
+        <input  onInput="gr=this.value" type="range" min="1" max="50" class="pen">
+       
+    </div>
+    <div class="figuri">
+        <img id="cerc" src="circle.jpg">
+        <img id="patrat" src="square.png">
+        <img id="triunghi" src="triangle.png">
+    </div>
+    <script src="mm.js"></script>
+</body>
+
+</html>
